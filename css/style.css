@@ -1,0 +1,32 @@
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.shining-text {
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.9) 50%,
+            rgba(255, 255, 255, 0.2) 100%
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 5s linear infinite ;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: -150%;
+    }
+}

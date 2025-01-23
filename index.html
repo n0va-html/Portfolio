@@ -1,30 +1,50 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <!--    Metas-->
+    <!--Metas-->
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="description"
           content="Bienvenue sur mon portfolio, je suis actuellement un developpeur web a la recherche d'un stage de mai à aout">
     <title>Martin COCHARD | Portfolio</title>
     <meta content="all" name="robots"/>
+    <!--meta OG-->
     <meta content="Martin COCHARD | Portfolio" property="og:title"/>
     <meta content="Bienvenue sur mon portfolio, je suis actuellement un developpeur web a la recherche d'un stage de mai à aout"
           property="og:description"/>
     <meta content="" property="og:url"/>
-    <!--    Fin metas-->
-
+    <!--Fin metas-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-<header>
+<body class=" text-white">
+<section class="h-screen flex items-center  justify-center bg-[url('/assets/img/feuilles.jpg')] bg-no-repeat bg-cover">
+    <div class="w-11/12 h-5/6 border-4 rounded-lg border-white relative p-6 overflow-hidden flex flex-col">
+        <!-- Nom, prénom et titre -->
+        <div class="absolute top-20 lg:left-24 md:left-18">
+            <h1 class="lg:text-[3vw] md:text-[4vw] font-bold shining-text">Martin COCHARD,</h1>
+            <p class="lg:text-[1.5vw] md:text-[2vw] font-medium shining-text">Développeur Web</p>
+        </div>
 
-</header>
-<main>
+        <!-- Texte défilant -->
+        <div class=" bg-black/25 absolute top-6 right-6 w-5/12 h-[calc(100%-3rem)] overflow-y-scroll scrollbar-hidden pr-8">
+            <p class="lg:text-[1vw] md:text-[2vw] leading-relaxed">
+                Bienvenue sur mon portfolio ! Je suis un développeur web passionné avec des compétences en HTML, CSS, JavaScript, et React. Je suis motivé à devenir full-stack, avec un fort intérêt pour Node.js et MongoDB.
+                <br><br>
+                En quête d'un stage du 19 mai au 25 juillet, je suis prêt à collaborer et à apprendre au sein d'une équipe dynamique. Contactez-moi pour en savoir plus !
+                <br><br>
+                Je suis également passionné par les nouvelles technologies, le design et l'optimisation des performances pour une meilleure expérience utilisateur.
+                <br>
+                <br>
+                Merci de visiter mon portfolio et n'hésitez pas à faire défiler pour en savoir plus !
+            </p>
+        </div>
+    </div>
+</section>
 
-</main>
-<footer>
-
-</footer>
-<script src="https://cdn.tailwindcss.com"></script>
+<section class="h-screen flex items-center justify-center">
+    <h2 class="text-3xl font-bold">Prochaine Section</h2>
+</section>
 </body>
+
 </html>
